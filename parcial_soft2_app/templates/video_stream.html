@@ -1,0 +1,30 @@
+{% extends 'layout-app.html' %}
+
+{% block content %}
+
+        <h1 class="text-3xl font-bold">
+            Bienvenido Camara Face ID
+        </h1>
+        <p>Este es el contenido principal de Camara Face ID</p> 
+        
+        <div class="flex justify-between mt-8 p-10 bg-white rounded">
+            <img class="w-1/2 border-2 border-black rounded-lg" 
+            src="{% url 'video_yolo' %}" width="640" height="480">     
+            <div class="w-1/2  px-12">
+                <h3 class="text-xl font-bold mb-4"> Lista negra de usuarios</h3>
+                <ul>
+                    <li> xd xd xd </li>
+                </ul>
+                <ul>
+                    <li> xd xd xd </li>
+                </ul>
+                <ul>
+                    <li> xd xd xd </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+       
+{% endblock %}
