@@ -1,4 +1,15 @@
+# Ignorar el entorno virtual
 venv/
-__pycache__/
-.env
+
+# Ignorar la base de datos SQLite
+db.sqlite3
+
+# Ignorar archivos de modelos grandes
+yolov5s.pt
+
+# Ignorar archivos de caché o temporales
 *.pyc
+__pycache__/
+
+# Ignorar configuración local (opcional, dependiendo de tu configuración)
+*.env
