@@ -7,7 +7,7 @@ import face_recognition
 
 def gen_camera():
     # Iniciar la cámara
-    video_capture = cv2.VideoCapture(1)
+    video_capture = cv2.VideoCapture(0)
     process_this_frame = True  # Variable para controlar cuándo procesar un cuadro
 
     while True:

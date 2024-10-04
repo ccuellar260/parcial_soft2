@@ -22,12 +22,14 @@ from parcial_soft2_app.controllers import FaceIdController
 from parcial_soft2_app.controllers import FaceIdPesado
 from parcial_soft2_app.controllers import DarioController
 from parcial_soft2_app.controllers import YoloController
+from parcial_soft2_app.controllers import TensorflowController
 
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('saludo/', views.saludo, name='saludo'),  # Ruta para la vista saludo
     path('video_face_id/', views.video_stream, name='video_face_id'),  # Nueva ruta para la transmisión de video
+    path('video_objetos/', views.video_objetos, name='video_objetos'),  # Nueva ruta para la transmisión de video
     path('', views.dashboard, name='dashboard'),  # Ruta para la página HTML
     path('verificacion/', DarioController.verificacion, name='verificacion'),  # Ruta para la página HTML
 
@@ -35,6 +37,6 @@ urlpatterns = [
     # path('video_feed/', views.video_feed, name='video_feed'),  # Nueva ruta para la transmisión de video
     path('video_feed/',FaceIdController.video_feed , name='video_feed'),  # Nueva ruta para la transmisión de video
     path('video_yolo/', YoloController.video_feed, name='video_yolo'),
-   
+    path('video_tensorflow/', TensorflowController.video_feed, name='video_tensorflow'),  #
    
 ]
